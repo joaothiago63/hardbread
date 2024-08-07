@@ -1,1 +1,198 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+$primary: #CCFF00;
+
+:root {
+    --primary-color: $primary !important;
+    --mdc-fab-container-color: $primary !important;
+}
+
+.mat-mdc-fab {
+    background-color: $primary !important;
+    color: black !important;
+}
+
+.p-button:focus {
+    border: 2px solid #000000 !important;
+    box-shadow: 0 0 0 1px #000000 !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.gap-4 {
+    gap: 1rem
+}
+
+.gap-8 {
+    gap: 2rem
+}
+
+.gap-16 {
+    gap: 4rem
+}
+
+.gap-17 {
+    gap: 4.2rem
+}
+
+.center {
+    justify-content: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.text-lg {
+    font-size: 0.800rem
+}
+
+.text-4xl {
+    font-size: 2rem;
+}
+
+.my-2 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.my-3 {
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.mb-4 {
+    margin-bottom: 40%;
+}
+
+.logo {
+    height: 5.8%;
+}
+
+.content {
+    margin-inline: auto;
+    margin-top: 2%;
+    width: 100%;
+    padding-inline: 1rem;
+
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 20%;
+}
+
+
+.mt-2 {
+    margin-top: 40%;
+}
+
+.m-3 {
+    margin: 15%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.pt-1 {
+    padding-top: 20%;
+}
+
+.p-1 {
+    padding: 0.400rem;
+}
+
+.pl-1 {
+    padding-left: 0.400rem;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.min-width-700 {
+    min-width: 700px;
+}
+
+.end {
+    justify-content: end;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.p-card,
+.p-card-body,
+.p-card-content {
+    padding: 0.2rem !important;
+}
+
+.dialog-2-col {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+}
+
+.col-2 {
+    grid-column: 2;
+    padding-right: 1rem;
+}
+
+.col-1 {
+    grid-column: 1;
+}
+
+.pi-btn {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.pi-btn :hover {
+    color: red;
+    font-size: 1.080rem !important;
+}
+
+.p-button {
+    background-color: #CCFF00;
+    color: black;
+    border-color: black;
+}

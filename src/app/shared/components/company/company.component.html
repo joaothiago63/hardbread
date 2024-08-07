@@ -1,0 +1,41 @@
+<div class="card-content">
+    <div class="card">
+        <p-card class="card">
+            <div class="flex between">
+                <h1>Gerenciamento de Empresas</h1>
+                <p-button label="Cadastrar" (click)="createCompany()" />
+            </div>
+        </p-card>
+        <br />
+        <div class="">
+            <p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Code</th>
+                        <th>Empresa</th>
+                        <th>Segmento</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-product>
+                    <tr>
+                        <td>{{ product.code }}</td>
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.category }}</td>
+                        <td>
+                            <div class="flex gap-8">
+                                <a type="button" class="pi-btn">
+                                    <i class="pi pi-pencil"></i>
+                                </a>
+                                <a type="button" (click)="delete()" class="pi-btn">
+                                    <i class="pi pi-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+</div>

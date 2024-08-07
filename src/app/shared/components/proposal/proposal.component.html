@@ -1,0 +1,46 @@
+<div class="card-content">
+    <div class="card">
+        <p-card class="card">
+            <div class="flex between">
+                <h1>Gerenciamento Comercial</h1>
+                <p-button label="Cadastrar" (click)="createProposal()" />
+            </div>
+        </p-card>
+        <br />
+        <div class="">
+            <p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Responsável</th>
+                        <th>Cliente</th>
+                        <th>Prazo</th>
+                        <th>Valor Global</th>
+                        <th>Status</th>
+                        <th>Serviço</th>
+                        <th></th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-product>
+                    <tr>
+                        <td>{{ product.code }}</td>
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.description }}</td>
+                        <td>{{ product.quantity }}</td>
+                        <td>{{ product.inventoryStatus }}</td>
+                        <td>{{ product.category }}</td>
+                        <td>
+                            <div class="flex gap-8">
+                                <a type="button" class="pi-btn">
+                                    <i class="pi pi-pencil"></i>
+                                </a>
+                                <a type="button" (click)="delete()" class="pi-btn">
+                                    <i class="pi pi-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+</div>

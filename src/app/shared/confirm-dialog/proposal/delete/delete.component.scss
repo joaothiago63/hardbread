@@ -1,0 +1,31 @@
+.confirm-dialog {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.alert {
+    color: red;
+    font-size: 4rem;
+}
+
+.label-confirm {
+    font-size: 1.5rem;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1.2rem;
+    border-color: black;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.btn:focus {
+    border: 3px solid #000000 !important;
+    box-shadow: 0 0 0 1px #000000 !important;
+}

@@ -1,0 +1,44 @@
+/* Estilos da sidebar */
+.sidebar {
+  width: 15%;
+  min-width: 155px;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar li :hover {
+  background-color: #CCFF00;
+  border-radius: 10px;
+  color: black;
+}
+
+.sidebar-li-hover {
+  background-color: #CCFF00 !important;
+  border-radius: 10px !important; 
+  color: black !important;
+}
+
+.text-black {
+  color: black !important;
+}

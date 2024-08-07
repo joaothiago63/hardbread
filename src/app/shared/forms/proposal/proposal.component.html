@@ -1,0 +1,47 @@
+<h2 mat-dialog-title>Nova Proposta</h2>
+<div class="card-content">
+    <div class="min-width-700">
+        <form [formGroup]="formGroup" class="form">
+            <div class="card flex justify-content-center gap-8 container">
+                <!-- colocar input text id do cliente -->
+                <p-dropdown formControlName="companyName" [options]="cities" optionLabel="name"
+                    placeholder="Razão Social" appendTo="body" />
+                <input type="text" pInputText placeholder="Id do Cliente" />
+            </div>
+            <div class="card flex justify-content-center gap-8 container">
+                <p-inputMask formControlName="companyName" mask="99/99/9999" placeholder="Data de Recebimento" />
+                <p-dropdown formControlName="companyName" [options]="cities" optionLabel="name" placeholder="Serviço"
+                    appendTo="body" />
+                <p-dropdown formControlName="companyName" [options]="cities" optionLabel="name"
+                    placeholder="UF Prestação de Serviço" appendTo="body" />
+            </div>
+            <div class="card flex justify-content-center gap-8 container">
+                <p-inputMask formControlName="companyName" mask="99/99/9999 99:99" placeholder="Prazo de envio" />
+                <p-dropdown formControlName="companyName" [options]="cities" optionLabel="name"
+                    placeholder="Contrato Guarda Chuva?" appendTo="body" />
+            </div>
+            <div class="card flex justify-content-center gap-8 container">
+                <p-inputNumber inputId="currency-br" mode="currency" currency="BRL" locale="pt-BR"
+                    placeholder="Valor da Proposta" />
+                <p-dropdown formControlName="companyName" [options]="cities" optionLabel="name"
+                    placeholder="Tipo de Serviço" appendTo="body" />
+                <p-dropdown formControlName="companyName" [options]="cities" optionLabel="name" placeholder="Origem"
+                    appendTo="body" />
+            </div>
+            <div class="w-100 min-width-700 container">
+                <div class="card flex justify-content-center gap-17">
+                    <div class="grid">
+                        <p-dropdown formControlName="companyName" [options]="cities" optionLabel="name"
+                            placeholder="Responsável" appendTo="body" />
+                        <p-dropdown formControlName="companyName" [options]="cities" optionLabel="name"
+                            placeholder="Tipo de Proposta" appendTo="body" />
+                    </div>
+                    <textarea rows="4" cols="35" pInputTextarea placeholder="Observações"></textarea>
+                </div>
+            </div>
+            <div class="flex end container min-width-700">
+                <p-button label="Enviar" />
+            </div>
+        </form>
+    </div>
+</div>

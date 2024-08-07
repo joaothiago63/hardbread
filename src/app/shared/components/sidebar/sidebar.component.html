@@ -1,0 +1,26 @@
+<div class="sidebar">
+    <img src="../../../../assets/SIGA 2.1 copiar (c2) (1) 2 (1) (1).png" class="logo mt-1 pl-1" alt="minha_imagem" />
+    <div class="mt-1 w-100 pl-1">
+        <h2 class="text-gray">Menu</h2>
+    </div>
+    <div class="w-100">
+        <ul class="">
+            @for(content of contents; track content.label){
+            <li [class]="firstRoute === content.path ? 'sidebar-li-hover' : ''">
+                <a [routerLink]="content.path" class="flex gap-2 text-lg p-1">
+                    @if(firstRoute === content.path){
+                        <i class="{{content.icon}} text-black"></i>
+                    }                    
+                    @else{
+                        <i class="{{content.icon}}"></i>
+                    }                    
+                    <strong [class]="firstRoute === content.path ? 'text-black' : ''">{{content.label}}</strong>
+                </a>
+            </li>
+            }
+        </ul>
+    </div>
+</div>
+
+
+<!-- [class]="firstRoute.contains(content.path) ? 'sidebar-li-hover' : ''" -->

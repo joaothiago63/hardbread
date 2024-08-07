@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Nova Empresa</h2>
+<div class="flex center w-100">
+    <div class="dialog-2-col">
+        <input type="text" pInputText placeholder="Razão Social" />
+        <p-dropdown [options]="cities" optionLabel="name" placeholder="Segmento do cliente" appendTo="body" />
+        <p-inputMask mask="99.999.999/9999-99" placeholder="CNPJ" />
+        <div class="flex end col-2">
+            <p-button label="Enviar"></p-button>
+        </div>
+    </div>
+</div>
